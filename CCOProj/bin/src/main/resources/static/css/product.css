@@ -1,0 +1,156 @@
+html,
+body {
+    height: 100%;
+}
+
+.cardheader {
+    border-bottom: 2px solid #39c0ed;
+}
+
+.divsticky {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    background-color: white;
+    padding: 10px;
+    font-size: 20px;
+    z-index: 1000;
+}
+
+.footer1 {
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+    margin: 5px 0;
+    padding: 10px;
+    color: white;
+    border: 0;
+    background-color: #1d1e20;
+    color: #fff;
+    border-radius: 10px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+.footer1 div {
+    flex: 1;
+    text-align: center;
+}
+
+.footer1 span {
+    margin-left: auto;
+}
+
+#radio input[type="radio"] {
+    display: none;
+}
+
+#radio input:checked+.button {
+    background: #5e7380;
+    color: #fff;
+    cursor: default;
+}
+
+#radio .button {
+    display: inline-block;
+    margin: 0 5px 10px 0;
+    padding: 5px 10px;
+    background: #f7f7f7;
+    color: #333;
+    cursor: pointer;
+}
+
+#radio .button:hover {
+    background: #bbb;
+    color: #fff;
+}
+
+#radio .round {
+    border-radius: 5px;
+}
+
+#radio input[type="checkbox"] {
+    display: none;
+}
+
+#checkbox input:checked+.button {
+    background: #5e7380;
+    color: #fff;
+}
+
+#checkbox .button {
+    display: inline-block;
+    margin: 0 5px 10px 0;
+    padding: 5px 10px;
+    background: #f7f7f7;
+    color: #333;
+    cursor: pointer;
+}
+
+#checkbox .button:hover {
+    background: #bbb;
+    color: #fff;
+}
+
+#checkbox .round {
+    border-radius: 5px;
+}
+
+.divflex {
+    display: flex;
+
+}
+
+.footersticky {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+
+}
+
+#remark input {
+    width: 100%;
+    height: 50px;
+    margin: 5px 0;
+
+}
+
+#itemcount {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#itemcount input {
+    width: 50px;
+    height: 50px;
+    margin: 20px;
+    border: 0px;
+    border-radius: 50%;
+    background-color: #e2dfdf;
+}
+
+#itemcount input[value="-"]:hover {
+    border: 5px;
+    background-color: #bbb;
+}
+
+#itemcount input[value="+"] {
+    background-color: #bbb;
+}
+
+#itemcount input[value="+"]:hover {
+    background-color: #e2dfdf;
+
+}
+
+h2,
+h4 {
+    font-weight: bold;
+}

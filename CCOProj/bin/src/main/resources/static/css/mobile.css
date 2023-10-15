@@ -1,0 +1,222 @@
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+hr,
+p,
+blockquote,
+/* structural elements 結構元素 */
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+/* list elements 清單元素 */
+pre,
+/* text formatting elements 文本格式元素 */
+form,
+fieldset,
+legend,
+button,
+input,
+textarea,
+/* form elements 表單元素 */
+th,
+td,
+/* table elements 表格元素 */
+img {
+    /* img elements 圖片元素 */
+    border: medium none;
+    margin: 0;
+    padding: 0;
+}
+
+/** 設置預設字體 **/
+body,
+button,
+input,
+select,
+textarea {
+    font: 12px/1.5 ‘OO正黑體’, tahoma, Srial, helvetica,
+        sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: 100%;
+}
+
+em {
+    font-style: normal;
+}
+
+/* 重置清單元素 */
+ul,
+ol {
+    list-style: none;
+}
+
+/* 重置超連結元素 */
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #F40;
+}
+
+/* 重置圖片元素 */
+img {
+    border: 0px;
+}
+
+/* 重置表格元素 */
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.wrapper {
+    width: 450px;
+    margin: 0 auto;
+}
+
+.headerBackground {
+    height: 200px;
+    background-image: url(../img/mobile/shop\ 2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    border-radius: 0 0 20px 20px;
+}
+
+.header {
+    height: 50px;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.header button {
+    width: 100px;
+    height: 30px;
+    float: right;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+.shop-header {
+    height: 70px;
+    margin-top: 10px;
+    padding-left: 20px;
+    border-bottom: 1px solid black;
+}
+
+.shop-header h1 {
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+
+.shop-header p {
+    font-size: 10px;
+    color: rgb(52, 52, 52);
+}
+
+details {
+    padding: 10px;
+}
+
+nav {
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    position: sticky;
+    top: 0;
+}
+
+nav ul {
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+nav ul li a {
+    /* float: left; */
+    padding: 5px 10px;
+    height: 35px;
+    border-radius: 15px;
+    background-color: rgba(222, 222, 222, 0.8);
+    color: black;
+    line-height: 35px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+.menu ul {
+    width: 100%;
+    border-bottom: 20px solid rgb(239, 239, 239);
+}
+
+.menu ul li {
+    height: 100px;
+    border-bottom: 1px solid black;
+}
+
+.menu ul li:first-child {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 35px;
+    font-size: 20px;
+    padding: 10px;
+}
+
+.menu_list {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.menu_list h2 {
+    padding-left: 20px;
+    font-size: 15px;
+    line-height: 29px;
+}
+
+/* .menu_item{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+} */
+
+.menu_item p {
+    float: left;
+    padding-left: 20px;
+}
+
+.menu-item {
+    float: right;
+    padding-right: 20px;
+}
+
+.menu-item input {
+    border: 1px solid black;
+    border-radius: 5px;
+}

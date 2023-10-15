@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    height: 100%;
+    background-color: #f4f4f4;
+}
+
+header {
+    width: 100%;
+    height: 70px;
+    background-color: #12424d;
+    /* color: white; */
+    position: fixed;
+    top: 0;
+    z-index: 999;
+}
+
+header>h1 {
+    color: #f4f4f4;
+    text-align: center;
+    line-height: 70px;
+}
+
+.openButton {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    left: 30px;
+    top: 10px;
+    float: left;
+    background-image: url(../img/icon/menu-burger\ \(1\).png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.menuBox {
+    width: 300px;
+    height: 100vh;
+    background-color: rgba(57, 62, 67, 0.889);
+    /* background-image: linear-gradient(rgb(0, 0, 0), rgba(0, 0, 0, 0.427)); */
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    display: none;
+    z-index: 999;
+}
+
+.menuBox a {
+    display: inline-block;
+    width: 100%;
+    height: 50px;
+    text-indent: 10px;
+    color: #ffffff;
+    /* text-align: center; */
+    border: 2px solid black;
+    border-top: 0;
+    line-height: 50px;
+    background-color: rgb(17, 28, 37);
+}
+
+.menuBox a:hover{
+    background-color: rgb(34, 52, 68);
+}
+
+.menuBox>li>ul {
+    display: none;
+}
+
+.menuBox>li>ul>li a {
+    display: none;
+    border: 0;
+}
+
+.menu-top{
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    background-color: rgb(57, 62, 67);
+}
+
+.closeButton {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+    float: right;
+    background-image: url(../img/icon/cross-circle.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+@media (min-width: 768px) {
+   
+    }
+
+@media (min-width: 992px) {
+   
+}
+@media (min-width: 1800px) {
+   .menuBox {
+    display: inline-block;
+   }
+   .menu-top{
+    background-color: #12424d;
+   }
+   .closeButton {
+    display: none;
+   }
+} 

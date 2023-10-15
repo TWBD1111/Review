@@ -1,0 +1,385 @@
+* {
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    /* outline: 2px solid pink; */
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.wrapper {
+    width: 80%;
+    margin: 0 auto;
+}
+
+
+a:hover {
+    text-decoration: none;
+}
+
+.nav {
+    display: none;
+}
+
+body {
+    overflow-x: hidden;
+    /* overflow-y: hidden; */
+    height: 100%;
+    background-color: rgb(0, 0, 0);
+}
+
+.headerBackground {
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    background-image: url(../img/cat.jpg);  /* 預設的背景圖 */
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: background-image 2s ease-in-out;  /* 淡入淡出效果 */
+}
+
+
+.header {
+    width: 100%;
+    height: 70px;
+    background: hsla(0, 0%, 0%, 0.5);
+}
+
+.menuButton {
+    float: left;
+    width: 50px;
+    height: 50px;
+    margin: 10px 0 0 10px;
+    /* background-color: aliceblue; */
+    background-image: url(../img/icon/menu-burger.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.menuBox {
+    width: 100%;
+    height: 100%;
+    background: hsla(0, 0%, 0%, 0.8);
+    position: absolute;
+    overflow: hidden;
+    display: none;
+}
+
+.menuBox>ul {
+    width: 300px;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* .menuBox>ul>h1 {
+    width: 250px;
+    height: 70px;
+    margin: 0 auto;
+    padding-top: 10px;
+
+}
+
+.menuBox>ul>h1>a {
+    display: block;
+    width: 250px;
+    height: 50px;
+    background-image: url(../img/logo.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    font-size: 0;
+} */
+
+.user {
+    height: 50px;
+    margin-bottom: 10px;
+}
+
+.menuButtonClose {
+    width: 30px;
+    height: 30px;
+    margin: 5% 5% 0 0;
+    float: right;
+    background-image: url(../img/icon/cross-circle.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+/* 
+.click1{
+    border-radius: 20px 20px 0 0;
+}
+
+.menuBox>li{
+    border-radius: 30px;
+}
+
+.click3{
+    border-bottom: 30px;
+} */
+
+.menuBox>ul>li>ul {
+    width: 100%;
+    height: 100px;
+    float: left;
+}
+
+
+.menuBox>ul>li a {
+    display: inline-block;
+    width: 100%;
+    height: 50px;
+    color: #000;
+    /* text-align: center; */
+    text-indent: 10px;
+    line-height: 50px;
+    background-color: rgb(255, 255, 255);
+    border-bottom: 1px solid black;
+}
+
+.menuBox>ul>li a:hover {
+    background-color: rgb(228, 228, 228);
+}
+
+.menuBox .click2:hover {
+    background-color: rgb(255, 255, 51);
+}
+
+.menuBox .downIcon {
+    float: right;
+    width: 20px;
+    height: 20px;
+    margin: 6% 5% 0 0;
+    background-image: url(../img/icon/angle-double-small-down.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+
+.menuBox>ul>li>ul {
+    display: none;
+}
+
+.wrapper {
+    width: 80%;
+    margin: 0 auto;
+}
+
+
+.logo {
+    height: 70px;
+    width: 250px;
+    padding-top: 8px;
+    margin: 0 auto;
+}
+
+.logo h1 {
+    height: 70px;
+    width: 250px;
+    margin: 0;
+
+}
+
+.logo h1 a {
+    display: block;
+    height: 60px;
+    width: 250px;
+    background-image: url(../img/logo.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    font-size: 0;
+}
+
+.banner {
+    height: 700px;
+    /* height: 100%; */
+}
+
+.banner h2 {
+    text-align: center;
+    color: aliceblue;
+    padding-top: 250px;
+}
+
+.banner .icon {
+    position: absolute;
+    bottom: 2%;
+    right: 50%;
+    left: 50%;
+    /* margin: 0 auto; */
+    width: 50px;
+    height: 50px
+}
+
+.containerBackground {
+    float: left;
+    height: 100vh;
+    width: 100%;
+    background-image: url(../img/pexels-maria-orlova.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.containerBox {
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(0, 0, 0, 0.5);
+    overflow: hidden;
+    position: relative;
+}
+
+.container p {
+    margin-top: 20px;
+    color: aliceblue;
+    font-size: 50px;
+    font-weight: 600;
+}
+
+.container p:first-child {
+    margin-top: 100px;
+    font-size: 40px;
+    font-weight: 400;
+}
+
+.footerBox {
+    float: left;
+    flex-direction: row;
+    width: 100%;
+    height: 22%;
+    background-color: rgba(0, 0, 0, 0.5);
+    margin-top: 42%;
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    justify-content: start;
+    align-items: flex-end;
+}
+
+.footerBox a {
+    float: right;
+    margin: 50px 30px 0 0;
+    width: 50px;
+    height: 50px;
+    background: url("../img/ig＿icon.png");
+    background-size: cover;
+}
+
+
+.footerBox p {
+    color: white;
+}
+
+@media (min-width: 768px) {
+    .logo {
+        display: inline-block;
+    }
+
+    .nav {
+        display: inline-block;
+    }
+
+    .menuButton {
+        display: none;
+    }
+
+    .menuBox {
+        display: none;
+    }
+
+    .logo {
+        padding: 0;
+        margin: 8px 0 0 10px;
+        height: 70px;
+        width: 170px;
+        float: left;
+    }
+
+    .logo h1 {
+        height: 70px;
+        width: 170px;
+        margin: 0;
+    }
+
+    .logo h1 a {
+        display: block;
+        height: 60px;
+        width: 250px;
+        background-image: url(../img/logo.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        font-size: 0;
+    }
+
+    .nav {
+        width: 500px;
+        float: right;
+        margin-right: 50px;
+    }
+
+    .nav>ul {
+        float: right;
+    }
+
+    .nav>ul>li {
+        float: left;
+        position: relative;
+        height: 50px;
+        width: 100px;
+    }
+
+    .nav>ul>li>ul {
+        display: none;
+        position: absolute;
+        background-color: azure;
+        border-radius: 30px;
+        width: 180px;
+    }
+
+    .nav a {
+        /* text-decoration: none; */
+        margin: 10px 20px 0 0;
+        display: inline-block;
+        height: 50px;
+        width: 100px;
+        border-radius: 50px;
+        line-height: 50px;
+        text-align: center;
+        color: aliceblue;
+    }
+
+    .nav>ul>li>ul>li>a {
+        width: 180px;
+        border-radius: 0;
+        /* border-radius: 0px; */
+        background-color: none;
+    }
+
+    .nav>ul>li>a:hover {
+        background-color: rgba(255, 255, 255, 0.2);
+    }
+
+    .nav>ul>li:last-child a:hover {
+        background-color: rgba(255, 255, 0, 0.6);
+    }
+
+    .nav ul li ul a {
+        color: black;
+    }
+    .containerBox {
+        width: 500px;
+    }
+/* 
+    .banner h2 {
+        text-align: center;
+        color: aliceblue;
+        margin-top: 250px;
+    } */
+
+}
+
+@media (min-width: 992px) {}
+
+@media (min-width: 1200px) {}

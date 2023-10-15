@@ -1,0 +1,45 @@
+.pageWrapper {
+    width: 450px;
+    margin: 0 auto;
+}
+
+
+.pageBox {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.headerBackgroundCenter {
+    height: 1200px;
+    width: 100%;
+    position: relative;
+    background-image: url(../img/cat.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+}
+
+.checkbox__list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.checkbox__item{
+    display: inline-block;
+}
+
+.checkbox__label{
+    float: right;
+    padding: 5px 5px;
+    color: aliceblue;
+}
+
+input.form__input{
+    width: 20px;
+    height: 20px;
+    border-radius: 6px;
+    display: inline-block;
+}

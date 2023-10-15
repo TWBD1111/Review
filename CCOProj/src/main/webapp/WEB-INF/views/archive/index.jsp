@@ -1,0 +1,132 @@
+ <%@ page language="java" contentType="text/html; charset=UTF-8"
+	pageEncoding="UTF-8"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<%@ taglib prefix="spring" uri="http://www.springframework.org/tags"%>
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://cdn.lordicon.com/bhenfmcm.js"></script>
+<script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+<script src="./js/style.js"></script>
+<link rel='stylesheet' href="<c:url value='/bootstrap-3.4.1-dist/css/bootstrap.min.css' /> "type="text/css" />
+<%-- <link rel='stylesheet' href="<c:url value='/css/styles.css' /> "type="text/css" /> --%>
+<link rel="stylesheet" href="./css/style.css">
+
+<meta charset="UTF-8">
+<title>Marlin</title>
+</head>
+<body>
+    <div class="headerBackground headerBackgroundCenter">
+        <div class="pageBox">
+            <div class="header">
+                <div class="menuButton"></div>
+                <div class="menuBox">
+                    <ul>
+                        <div class="user">
+                            <div class="menuButtonClose"></div>
+                        </div>
+                        <li>
+                            <a class="click1" href="#">服務介紹
+                                <div class="downIcon"></div>
+                            </a>
+                            <ul>
+                                <li><a href="./OderSystem.html">接單系統</a></li>
+                                <li><a href="./Report.html">報表分析</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="./plan.html">價格方案</a></li>
+                        <li><a class="click2" href="/contact.html">立刻諮詢</a></li>
+                        <li><a class="click3" href="./login.html">登入</a></li>
+                    </ul>
+                </div>
+                <div class="logo">
+                    <h1><a href="./index.html">MarlinLogo</a></h1>
+                </div>
+                <div class="nav">
+                    <ul>
+                        <li><a href="./login.html">登入</a></li>
+                        <li><a href="#">服務介紹</a>
+                            <ul>
+                                <li><a href="./OderSystem.html">接單系統</a></li>
+                                <li><a href="./Report.html">營業報表分析</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="./plan.html">價格方案</a></li>
+                        <li><a href="/contact.html">立刻諮詢</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="banner wrapper">
+            <h2>全台最知名的手機菜單支付系統</h2>
+            <a href="#no2">
+                <lord-icon class="icon" src="https://cdn.lordicon.com/rxufjlal.json" trigger="hover"
+                    colors="primary:#ffffff"></lord-icon>
+            </a>
+        </div>
+    </div>
+    <div id="no2" class="containerBackground">
+        <article>
+            <div class="containerBox">
+                <div class="container wrapper">
+                    <p>Hello 歡迎來到Marlin</p>
+                    <p>數位經營革命</p>
+                    <p>拉近顧客零距離</p>
+                </div>
+                <footer>
+                    <div class="footerBox">
+                        <!-- 社群icon -->
+                        <!-- <a href="#"></a> -->
+                        <p><small>@2023_Starpensive</small></p>
+                    </div>
+
+                </footer>
+            </div>
+        </article>
+
+    </div>
+</body>
+<script>
+ /*  let imageIndex = 0;
+const images = [
+  '../img/cat.jpg',
+  '../img/1.jpg',
+  '../img/2.jpg',
+  '../img/3.jpg',
+  '../img/4.jpg',
+  '../img/5.jpg',
+  '../img/6.jpg'
+];
+const headerBackground = document.querySelector('.headerBackground');
+
+// 預加載圖片
+const preloadedImages = [];
+let loadedImagesCount = 0;
+
+images.forEach((src, index) => {
+  const img = new Image();
+  img.onload = function() {
+    loadedImagesCount++;
+    preloadedImages[index] = this;
+    
+    if (loadedImagesCount === images.length) {
+      // 所有圖片已加載，開始進行背景切換
+      setTimeout(changeBackground, 500);
+    }
+  };
+  img.src = src;
+});
+
+// 切換背景
+function changeBackground() {
+  headerBackground.style.backgroundImage = `url(${preloadedImages[imageIndex].src})`;
+  imageIndex++;
+
+  if (imageIndex >= preloadedImages.length) {
+    imageIndex = 0;
+  }
+
+  setTimeout(changeBackground, 10000); // 每3秒切換一次
+} */
+</script>
+</html>
