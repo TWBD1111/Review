@@ -1,6 +1,6 @@
 # Review
 mobile - 建置初期靜態頁面  
-CCO - 點餐專案  (Spring Boot框架)
+CCO - 點餐專案  (Spring Boot框架)  
   點餐首頁: http://localhost:8080/main 
   
 properties檔案需更改以下設定  
