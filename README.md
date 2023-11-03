@@ -7,6 +7,7 @@ properties檔案需更改以下設定
 spring.datasource.url=jdbc:mysql://localhost:3306/your_database_name?useUnicode=yes&characterEncoding=utf8&allowPublicKeyRetrieval=true&useSSL=false&serverTimezone=Asia/Taipei  
 spring.datasource.username=YOUR_username  
 spring.datasource.password=YOUR_password  
-  
+
+****
 tetris2 - 簡易俄羅斯方塊  
   
