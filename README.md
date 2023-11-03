@@ -1,7 +1,7 @@
 # Review
 mobile - CCOProj建置初期靜態頁面  
 ****
-下載zip檔後需獨立import CCOProj專案
+下載zip檔後需獨立import CCOProj專案  
 CCOProj - 點餐專案  (Spring Boot框架)  
 點餐首頁: http://localhost:8080/main 
   
